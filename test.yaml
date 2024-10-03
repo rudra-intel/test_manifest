@@ -17,5 +17,5 @@ image:
   - description: Test public image
     registry: Release Service OCI registry
     path: "redis"
-    version: latest
+    version: "latest"
     extraTags:
