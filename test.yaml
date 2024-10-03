@@ -1,0 +1,21 @@
+# SPDX-FileCopyrightText: (C) 2024 Intel Corporation
+# SPDX-License-Identifier: LicenseRef-Intel
+schemaVersion: 0.0.1
+
+source:
+  registry:
+    - name: Docker Hub OCI registry
+      url: https://docker.io
+      authType: basic
+
+image:
+  - path: "nginx"
+    version: "1.19.0"
+    registry: "Docker Hub OCI registry"
+    description:
+    extraTags:
+  - description: Test public image
+    registry: Release Service OCI registry
+    path: "redis"
+    version: latest
+    extraTags:
