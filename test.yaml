@@ -4,6 +4,9 @@ schemaVersion: 0.0.1
 
 source:
   registry:
+    - name: Release Service OCI Helm registry
+      url: oci://registry-rs.internal.ledgepark.intel.com
+      authType: jwt
     - name: Docker Hub OCI registry
       url: https://docker.io
       authType: basic
