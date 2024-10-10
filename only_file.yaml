@@ -1,0 +1,21 @@
+
+# SPDX-FileCopyrightText: (C) 2024 Intel Corporation
+# SPDX-License-Identifier: LicenseRef-Intel
+schemaVersion: 0.0.1
+
+source:
+  registry:
+    - name: Release Service OCI Helm registry
+      url: oci://registry-rs.internal.ledgepark.intel.com
+      authType: jwt
+    - name: Docker Hub OCI registry
+      url: https://docker.io
+      authType: basic
+
+file:
+  - path: one-intel-edge/edge-node/deb/node-agent
+    description: Node Agent
+    registry: Release Service OCI registry
+    version: 1.3.0
+    extraTags:
+    pushToS3: false
